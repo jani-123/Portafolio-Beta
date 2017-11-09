@@ -1,0 +1,104 @@
+.selector {
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 0.41;
+  width: 1366px;
+  height: 600px;
+  z-index: -1; }
+
+.texto {
+  color: #47525E;
+  font-family: Droid Sans Mono;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 65px;
+  text-align: left;
+  position: absolute;
+  top: 25%;
+  left: 20%; }
+  .texto h1 {
+    font-size: 2em; }
+
+.icons {
+  position: absolute;
+  top: 55%;
+  left: 35%; }
+
+.icons-redes {
+  background-color: rgba(255, 255, 255, 0);
+  width: 35px;
+  height: 35px;
+  margin-right: 90px; }
+
+.title {
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+  .title h1 {
+    font-size: 90px; }
+
+.foto {
+  margin-left: 100px;
+  width: 400px;
+  height: 300px; }
+
+.caja-foto {
+  display: inline-block; }
+
+.descripcion {
+  font-family: "Source Code Pro", monospace;
+  display: inline-block; }
+  .descripcion p {
+    font-size: 25px; }
+
+.caja-hobies {
+  margin-left: 20%;
+  margin-bottom: 100px;
+  margin-top: 5%; }
+
+.hobies {
+  background-color: rgba(255, 255, 255, 0);
+  width: 100px;
+  height: 100px;
+  margin-right: 90px; }
+
+.habi-img {
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 0.41;
+  width: 1366px;
+  height: 600px;
+  z-index: -1; }
+
+.title-habilidad {
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  margin-top: -610px;
+  margin-bottom: 30px; }
+  .title-habilidad h1 {
+    font-size: 90px; }
+
+.icons-habi {
+  background-color: rgba(255, 255, 255, 0);
+  width: 140px;
+  height: 140px;
+  margin-right: 100px; }
+
+.caja-habis {
+  margin-left: 20%;
+  margin-bottom: 100px;
+  margin-top: -450px; }
+
+.caja-habis2 {
+  margin-left: 20%;
+  margin-bottom: 100px;
+  margin-top: -300px; }
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite; }
+
+@keyframes caret {
+  50% {
+    border-color: transparent; } }
+
+/*# sourceMappingURL=style.css.map */

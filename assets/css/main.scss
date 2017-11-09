@@ -1,0 +1,112 @@
+$font-title:    Droid Sans Mono;
+$font-subtitle: 'Kanit', sans-serif;
+$font-textbody: 'Source Code Pro', monospace;
+$fondo-color: rgba(255, 255, 255, 0);
+@mixin skills($marginTop){
+  margin-left: 20%;
+  margin-bottom: 100px;
+  margin-top: $marginTop;
+}
+@mixin images{
+  background-color: $fondo-color;
+  opacity: 0.41;
+  width: 1366px;
+  height: 600px;
+  z-index: -1;
+}
+@mixin icons($width,$height,$marginRight){
+  background-color: $fondo-color;
+  width: $width;
+  height: $height;
+  margin-right: $marginRight;
+}
+@mixin title($mrgTop,$mrgBottom){
+  font-family: $font-subtitle;
+  text-align: center;
+  margin-top: $mrgTop;
+  margin-bottom: $mrgBottom;
+}
+.selector {
+  @include images();
+}
+.texto {
+  color: #47525E;
+  font-family: $font-title;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 65px;
+  text-align: left;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  h1{
+    font-size: 2em;
+  }
+}
+
+.icons{
+  position: absolute;
+  top: 55%;
+  left: 35%;
+}
+.icons-redes {
+  @include icons(35px,35px,90px);
+}
+.title{
+  @include title(20px,30px );
+  h1{
+    font-size: 90px;
+  }
+}
+.foto{
+  margin-left: 100px;
+  width: 400px;
+  height: 300px;
+  
+}
+.caja-foto{
+  display: inline-block;
+}
+.descripcion{
+  font-family: $font-textbody;
+  display: inline-block;
+  p{
+    font-size: 25px;
+  }
+}
+.caja-hobies{
+  @include skills(5%);
+}
+.hobies{
+  @include icons(100px,100px,90px);
+}
+.habi-img {
+  @include images();
+}
+.title-habilidad{
+  @include title(-610px,30px );
+  h1{
+    font-size: 90px;
+  }
+}
+.icons-habi{
+  @include icons(140px,140px,100px);
+}
+.caja-habis{ 
+  @include skills(-450px);
+}
+.caja-habis2{
+  @include skills(-300px);
+}
+// animacion
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
